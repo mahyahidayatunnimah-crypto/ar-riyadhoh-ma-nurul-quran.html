@@ -1,0 +1,1626 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Media Pembelajaran Bahasa Arab Kelas X - Bab 2: الأُسْرَةُ وَالْبَيْتُ</title>
+  <!-- Google Fonts: Amiri & Noto Naskh Arabic untuk Teks Arab, Plus Jakarta Sans untuk UI -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Noto+Naskh+Arabic:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #0f766e;
+      --primary-dark: #115e59;
+      --primary-light: #ccfbf1;
+      --secondary: #f59e0b;
+      --secondary-light: #fef3c7;
+      --accent: #0284c7;
+      --bg: #f0fdfa;
+      --surface: #ffffff;
+      --text-main: #1e293b;
+      --text-muted: #64748b;
+      --success: #16a34a;
+      --success-bg: #dcfce7;
+      --danger: #dc2626;
+      --danger-bg: #fee2e2;
+      --border: #e2e8f0;
+      --shadow: 0 10px 25px -5px rgba(15, 118, 110, 0.1), 0 8px 10px -6px rgba(15, 118, 110, 0.05);
+      --radius: 18px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background: linear-gradient(135deg, #f0fdfa 0%, #e0f2fe 100%);
+      color: var(--text-main);
+      min-height: 100vh;
+      line-height: 1.6;
+    }
+
+    .arabic {
+      font-family: 'Noto Naskh Arabic', 'Amiri', serif;
+      direction: rtl;
+      unicode-bidi: isolate;
+    }
+
+    .arabic-title {
+      font-family: 'Amiri', 'Noto Naskh Arabic', serif;
+      direction: rtl;
+      unicode-bidi: isolate;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(135deg, #0f766e 0%, #0d9488 50%, #0369a1 100%);
+      color: white;
+      padding: 1.75rem 1.25rem 2.25rem;
+      text-align: center;
+      border-bottom-left-radius: 30px;
+      border-bottom-right-radius: 30px;
+      box-shadow: 0 12px 30px rgba(15, 118, 110, 0.22);
+      position: relative;
+      overflow: hidden;
+    }
+
+    header::before {
+      content: "۞";
+      position: absolute;
+      top: -20px;
+      left: 5%;
+      font-size: 8rem;
+      opacity: 0.08;
+      pointer-events: none;
+    }
+
+    header::after {
+      content: "۞";
+      position: absolute;
+      bottom: -35px;
+      right: 5%;
+      font-size: 9rem;
+      opacity: 0.08;
+      pointer-events: none;
+    }
+
+    .school-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(255, 255, 255, 0.16);
+      backdrop-filter: blur(6px);
+      padding: 0.4rem 1rem;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+    }
+
+    header h1 {
+      font-size: clamp(1.5rem, 3.5vw, 2.2rem);
+      font-weight: 800;
+      margin-bottom: 0.25rem;
+      letter-spacing: -0.02em;
+    }
+
+    header .arabic-header {
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      color: #fde68a;
+      margin: 0.25rem 0;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+
+    .meta-info {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.75rem 1.5rem;
+      margin-top: 0.85rem;
+      font-size: 0.9rem;
+      color: #e0f2fe;
+    }
+
+    .meta-info span {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+
+    /* Container & Navigation */
+    .container {
+      max-width: 1100px;
+      margin: -1.4rem auto 3rem;
+      padding: 0 1rem;
+      position: relative;
+      z-index: 10;
+    }
+
+    .nav-tabs {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.75rem;
+      background: var(--surface);
+      padding: 0.6rem;
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+      margin-bottom: 1.75rem;
+    }
+
+    .tab-btn {
+      border: none;
+      background: transparent;
+      padding: 0.9rem 0.75rem;
+      border-radius: 14px;
+      font-family: inherit;
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: all 0.25s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.25rem;
+    }
+
+    .tab-btn .tab-icon {
+      font-size: 1.4rem;
+    }
+
+    .tab-btn:hover {
+      background: #f1f5f9;
+      color: var(--primary);
+    }
+
+    .tab-btn.active {
+      background: var(--primary);
+      color: white;
+      box-shadow: 0 4px 14px rgba(15, 118, 110, 0.3);
+    }
+
+    .section-panel {
+      display: none;
+      animation: fadeIn 0.35s ease;
+    }
+
+    .section-panel.active {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Card Wrapper */
+    .card-box {
+      background: var(--surface);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(226, 232, 240, 0.8);
+    }
+
+    .section-header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.25rem;
+      padding-bottom: 1rem;
+      border-bottom: 2px dashed var(--border);
+    }
+
+    .section-header h2 {
+      font-size: 1.3rem;
+      color: var(--primary-dark);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    /* Controls & Filters */
+    .filter-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .pill-btn {
+      border: 1.5px solid var(--border);
+      background: white;
+      color: var(--text-main);
+      padding: 0.45rem 0.9rem;
+      border-radius: 999px;
+      font-family: inherit;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .pill-btn:hover {
+      border-color: var(--primary);
+      color: var(--primary);
+    }
+
+    .pill-btn.active {
+      background: var(--primary-light);
+      border-color: var(--primary);
+      color: var(--primary-dark);
+    }
+
+    /* FLASHCARDS */
+    .flashcard-stage {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 1rem 0;
+    }
+
+    .flashcard-wrapper {
+      width: 100%;
+      max-width: 520px;
+      height: 310px;
+      perspective: 1000px;
+      cursor: pointer;
+      margin-bottom: 1.25rem;
+    }
+
+    .flashcard-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.6s cubic-bezier(0.4, 0.2, 0.2, 1);
+      transform-style: preserve-3d;
+    }
+
+    .flashcard-wrapper.flipped .flashcard-inner {
+      transform: rotateY(180deg);
+    }
+
+    .flashcard-face {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      border-radius: 24px;
+      padding: 1.75rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 15px 35px rgba(15, 118, 110, 0.12);
+      border: 2px solid var(--primary-light);
+    }
+
+    .flashcard-front {
+      background: linear-gradient(145deg, #ffffff 0%, #f0fdfa 100%);
+    }
+
+    .flashcard-back {
+      background: linear-gradient(145deg, #0f766e 0%, #115e59 100%);
+      color: white;
+      transform: rotateY(180deg);
+      border-color: var(--primary);
+    }
+
+    .card-category-tag {
+      position: absolute;
+      top: 1rem;
+      left: 1.25rem;
+      background: var(--secondary-light);
+      color: #b45309;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 0.25rem 0.75rem;
+      border-radius: 999px;
+    }
+
+    .card-index-tag {
+      position: absolute;
+      top: 1rem;
+      right: 1.25rem;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--text-muted);
+    }
+
+    .flashcard-back .card-index-tag {
+      color: #ccfbf1;
+    }
+
+    .fc-arabic {
+      font-size: clamp(2.3rem, 5vw, 3.2rem);
+      font-weight: 700;
+      color: var(--primary-dark);
+      margin-bottom: 0.5rem;
+      line-height: 1.6;
+    }
+
+    .fc-latin {
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--accent);
+      font-style: italic;
+    }
+
+    .fc-meaning {
+      font-size: clamp(1.5rem, 3.5vw, 2rem);
+      font-weight: 800;
+      margin-bottom: 0.5rem;
+    }
+
+    .fc-sub-arabic {
+      font-size: 1.6rem;
+      color: #fde68a;
+      margin-bottom: 0.25rem;
+    }
+
+    .fc-hint {
+      position: absolute;
+      bottom: 0.9rem;
+      font-size: 0.78rem;
+      opacity: 0.75;
+    }
+
+    .audio-btn {
+      background: var(--secondary);
+      color: #451a03;
+      border: none;
+      padding: 0.65rem 1.35rem;
+      border-radius: 999px;
+      font-family: inherit;
+      font-weight: 700;
+      font-size: 0.95rem;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      box-shadow: 0 4px 12px rgba(245, 158, 11, 0.35);
+      transition: transform 0.15s, background 0.2s;
+      margin-top: 0.75rem;
+    }
+
+    .audio-btn:hover {
+      background: #fbbf24;
+      transform: scale(1.04);
+    }
+
+    .audio-btn:active {
+      transform: scale(0.97);
+    }
+
+    .fc-controls {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .btn-nav {
+      background: white;
+      border: 2px solid var(--primary);
+      color: var(--primary);
+      padding: 0.6rem 1.2rem;
+      border-radius: 12px;
+      font-family: inherit;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .btn-nav:hover {
+      background: var(--primary);
+      color: white;
+    }
+
+    /* Vocab Grid */
+    .vocab-grid-toggle {
+      margin-top: 1.75rem;
+      border-top: 1px solid var(--border);
+      padding-top: 1.25rem;
+    }
+
+    .vocab-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 0.85rem;
+      margin-top: 1rem;
+    }
+
+    .mini-vocab {
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 0.85rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.5rem;
+      transition: all 0.2s;
+    }
+
+    .mini-vocab:hover {
+      border-color: var(--primary);
+      background: #f0fdfa;
+    }
+
+    .mini-vocab-text .ar {
+      font-size: 1.45rem;
+      font-weight: 700;
+      color: var(--primary-dark);
+      display: block;
+    }
+
+    .mini-vocab-text .id {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    .mini-audio {
+      background: var(--primary-light);
+      color: var(--primary-dark);
+      border: none;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 1rem;
+      flex-shrink: 0;
+      transition: 0.2s;
+    }
+
+    .mini-audio:hover {
+      background: var(--primary);
+      color: white;
+    }
+
+    /* MATCHING GAME */
+    .game-stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      align-items: center;
+      background: #f8fafc;
+      padding: 0.85rem 1.1rem;
+      border-radius: 14px;
+      margin-bottom: 1.25rem;
+      border: 1px solid var(--border);
+    }
+
+    .stat-badge {
+      background: white;
+      padding: 0.4rem 0.85rem;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 0.9rem;
+      border: 1px solid var(--border);
+      color: var(--primary-dark);
+    }
+
+    .round-selector {
+      display: flex;
+      gap: 0.4rem;
+      flex-wrap: wrap;
+      margin-left: auto;
+    }
+
+    .matching-board {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem 1.5rem;
+    }
+
+    .match-col {
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
+    }
+
+    .match-col-title {
+      text-align: center;
+      font-weight: 700;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-bottom: 0.25rem;
+    }
+
+    .match-item {
+      padding: 0.85rem 1rem;
+      border-radius: 14px;
+      border: 2px solid var(--border);
+      background: white;
+      cursor: pointer;
+      font-weight: 700;
+      text-align: center;
+      transition: all 0.2s;
+      min-height: 58px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      user-select: none;
+    }
+
+    .match-item.arabic-item {
+      font-size: 1.55rem;
+      color: var(--primary-dark);
+    }
+
+    .match-item.indo-item {
+      font-size: 0.95rem;
+      color: var(--text-main);
+    }
+
+    .match-item:hover:not(.matched) {
+      border-color: var(--accent);
+      transform: translateY(-2px);
+    }
+
+    .match-item.selected {
+      border-color: var(--secondary);
+      background: var(--secondary-light);
+      box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.25);
+    }
+
+    .match-item.matched {
+      border-color: var(--success);
+      background: var(--success-bg);
+      color: var(--success);
+      cursor: default;
+      opacity: 0.8;
+    }
+
+    .match-item.wrong {
+      border-color: var(--danger);
+      background: var(--danger-bg);
+      animation: shake 0.35s;
+    }
+
+    @keyframes shake {
+      0%, 100% { transform: translateX(0); }
+      25% { transform: translateX(-6px); }
+      75% { transform: translateX(6px); }
+    }
+
+    /* QUIZ */
+    .quiz-progress-wrap {
+      margin-bottom: 1.25rem;
+    }
+
+    .quiz-meta {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.9rem;
+      font-weight: 700;
+      margin-bottom: 0.4rem;
+      color: var(--primary-dark);
+    }
+
+    .progress-bar {
+      width: 100%;
+      height: 10px;
+      background: #e2e8f0;
+      border-radius: 999px;
+      overflow: hidden;
+    }
+
+    .progress-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--primary), var(--accent));
+      width: 0%;
+      transition: width 0.3s ease;
+    }
+
+    .question-box {
+      background: #f8fafc;
+      border: 1.5px solid var(--border);
+      border-radius: 18px;
+      padding: 1.4rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .q-number {
+      display: inline-block;
+      background: var(--primary);
+      color: white;
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 0.2rem 0.7rem;
+      border-radius: 8px;
+      margin-bottom: 0.65rem;
+    }
+
+    .q-text {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .q-arabic-prompt {
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: var(--primary-dark);
+      margin-top: 0.6rem;
+      padding: 0.75rem 1rem;
+      background: white;
+      border-radius: 12px;
+      border-right: 4px solid var(--primary);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .options-list {
+      display: grid;
+      gap: 0.75rem;
+    }
+
+    .option-btn {
+      width: 100%;
+      text-align: left;
+      background: white;
+      border: 2px solid var(--border);
+      border-radius: 14px;
+      padding: 0.95rem 1.15rem;
+      font-family: inherit;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+      transition: all 0.2s;
+    }
+
+    .option-btn:hover:not(:disabled) {
+      border-color: var(--primary);
+      background: #f0fdfa;
+    }
+
+    .option-btn.correct {
+      border-color: var(--success);
+      background: var(--success-bg);
+      color: #14532d;
+    }
+
+    .option-btn.incorrect {
+      border-color: var(--danger);
+      background: var(--danger-bg);
+      color: #7f1d1d;
+    }
+
+    .option-arabic {
+      font-size: 1.45rem;
+      font-weight: 700;
+    }
+
+    .feedback-box {
+      margin-top: 1.1rem;
+      padding: 1rem 1.2rem;
+      border-radius: 14px;
+      display: none;
+      font-size: 0.95rem;
+    }
+
+    .feedback-box.show {
+      display: block;
+      animation: fadeIn 0.25s ease;
+    }
+
+    .feedback-box.valid {
+      background: var(--success-bg);
+      border-left: 5px solid var(--success);
+      color: #14532d;
+    }
+
+    .feedback-box.invalid {
+      background: var(--danger-bg);
+      border-left: 5px solid var(--danger);
+      color: #7f1d1d;
+    }
+
+    .quiz-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 1.25rem;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 12px;
+      font-family: inherit;
+      font-weight: 700;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-dark);
+    }
+
+    .btn-primary:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    .result-screen {
+      text-align: center;
+      padding: 2rem 1rem;
+      display: none;
+    }
+
+    .result-score-circle {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto 1.25rem;
+      box-shadow: 0 10px 25px rgba(15, 118, 110, 0.25);
+    }
+
+    .result-score-circle .big-num {
+      font-size: 2.5rem;
+      font-weight: 800;
+      line-height: 1;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem 1rem 2.5rem;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 640px) {
+      .nav-tabs {
+        gap: 0.4rem;
+        padding: 0.45rem;
+      }
+      .tab-btn {
+        font-size: 0.8rem;
+        padding: 0.7rem 0.35rem;
+      }
+      .matching-board {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.6rem;
+      }
+      .match-item.arabic-item {
+        font-size: 1.25rem;
+      }
+      .match-item.indo-item {
+        font-size: 0.82rem;
+      }
+      .flashcard-wrapper {
+        height: 280px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="school-badge">🕌 MA NURUL QUR'AN • Kelas X Semester 1</div>
+    <div class="arabic-title arabic-header">الدَّرْسُ الثَّانِي : الأُسْرَةُ وَالْبَيْتُ</div>
+    <h1>Bab 2: Keluarga dan Rumah (Al-Usrah wal-Bait)</h1>
+    <div class="meta-info">
+      <span>👩‍🏫 Pengajar: <strong>Mahya Hidayatun Ni'mah, S.Pd</strong></span>
+      <span>📚 Materi: Mufradat & Qawaid (Ad-Dhamir)</span>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Navigation Tabs -->
+    <nav class="nav-tabs" aria-label="Menu Pembelajaran">
+      <button class="tab-btn active" onclick="switchTab('flashcards', this)">
+        <span class="tab-icon">🗂️</span>
+        <span>Kartu Kosakata</span>
+      </button>
+      <button class="tab-btn" onclick="switchTab('matching', this)">
+        <span class="tab-icon">🧩</span>
+        <span>Menjodohkan (30)</span>
+      </button>
+      <button class="tab-btn" onclick="switchTab('quiz', this)">
+        <span class="tab-icon">📝</span>
+        <span>Kuis 30 Soal</span>
+      </button>
+    </nav>
+
+    <!-- SECTION 1: FLASHCARDS -->
+    <section id="flashcards" class="section-panel active">
+      <div class="card-box">
+        <div class="section-header">
+          <h2>🗂️ Kartu Kosakata (Mufradat)</h2>
+          <div class="filter-group" id="fc-filters">
+            <button class="pill-btn active" onclick="filterFlashcards('all', this)">Semua (30)</button>
+            <button class="pill-btn" onclick="filterFlashcards('Keluarga', this)">Anggota Keluarga</button>
+            <button class="pill-btn" onclick="filterFlashcards('Rumah', this)">Bagian Rumah</button>
+            <button class="pill-btn" onclick="filterFlashcards('Aktivitas', this)">Aktivitas di Rumah</button>
+          </div>
+        </div>
+
+        <div class="flashcard-stage">
+          <div class="flashcard-wrapper" id="flashcard" onclick="flipCard()">
+            <div class="flashcard-inner">
+              <!-- Front -->
+              <div class="flashcard-face flashcard-front">
+                <span class="card-category-tag" id="fc-cat">Keluarga</span>
+                <span class="card-index-tag" id="fc-counter">1 / 30</span>
+                <div class="arabic fc-arabic" id="fc-arabic">الْأُسْرَةُ</div>
+                <div class="fc-latin" id="fc-latin">Al-Usratu</div>
+                <button class="audio-btn" onclick="event.stopPropagation(); speakCurrentCard()">
+                  🔊 Dengarkan Pelafalan
+                </button>
+                <span class="fc-hint">Klik kartu untuk melihat arti Bahasa Indonesia ↻</span>
+              </div>
+              <!-- Back -->
+              <div class="flashcard-face flashcard-back">
+                <span class="card-index-tag" id="fc-counter-back">1 / 30</span>
+                <div class="fc-meaning" id="fc-meaning">Keluarga</div>
+                <div class="arabic fc-sub-arabic" id="fc-arabic-back">الْأُسْرَةُ</div>
+                <div style="font-size:0.95rem; color:#ccfbf1;" id="fc-latin-back">Al-Usratu</div>
+                <button class="audio-btn" onclick="event.stopPropagation(); speakCurrentCard()">
+                  🔊 Putar Ulang Suara
+                </button>
+                <span class="fc-hint">Klik kartu untuk kembali ke sisi depan ↺</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="fc-controls">
+            <button class="btn-nav" onclick="prevCard()">⬅️ Sebelumnya</button>
+            <button class="btn-nav" onclick="shuffleCards()">🔀 Acak Kartu</button>
+            <button class="btn-nav" onclick="nextCard()">Selanjutnya ➡️</button>
+          </div>
+        </div>
+
+        <div class="vocab-grid-toggle">
+          <h3 style="font-size:1.05rem; color:var(--primary-dark);">📖 Daftar Lengkap 30 Kosakata Bab 2</h3>
+          <div class="vocab-grid" id="all-vocab-grid"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: MATCHING GAME -->
+    <section id="matching" class="section-panel">
+      <div class="card-box">
+        <div class="section-header">
+          <h2>🧩 Latihan Menjodohkan 30 Kosakata</h2>
+          <button class="pill-btn" onclick="resetAllMatching()">🔄 Ulangi Semua</button>
+        </div>
+
+        <p style="font-size:0.92rem; color:var(--text-muted); margin-bottom:1rem;">
+          Pilih <strong>kata bahasa Arab</strong> di kolom kanan/pertama, lalu pasangkan dengan <strong>arti bahasa Indonesia</strong> yang tepat. Tersedia 30 kosakata yang dibagi menjadi 3 sesi (masing-masing 10 kata) agar nyaman dimainkan di HP maupun laptop!
+        </p>
+
+        <div class="game-stats">
+          <div class="stat-badge">⭐ Skor: <span id="match-score">0</span></div>
+          <div class="stat-badge">✅ Cocok: <span id="match-total-solved">0</span> / 30</div>
+          <div class="round-selector">
+            <button class="pill-btn active" id="round-btn-0" onclick="loadMatchRound(0)">Sesi 1 (1-10)</button>
+            <button class="pill-btn" id="round-btn-1" onclick="loadMatchRound(1)">Sesi 2 (11-20)</button>
+            <button class="pill-btn" id="round-btn-2" onclick="loadMatchRound(2)">Sesi 3 (21-30)</button>
+          </div>
+        </div>
+
+        <div id="match-banner" style="display:none; background:var(--success-bg); color:#14532d; padding:1rem; border-radius:14px; margin-bottom:1rem; font-weight:700; text-align:center;">
+          🎉 MasyaAllah! Sesi ini selesai! Silakan lanjut ke sesi berikutnya.
+        </div>
+
+        <div class="matching-board">
+          <div class="match-col">
+            <div class="match-col-title">الكَلِمَةُ العَرَبِيَّةُ (Bahasa Arab)</div>
+            <div id="match-arabic-col" class="match-col"></div>
+          </div>
+          <div class="match-col">
+            <div class="match-col-title">المَعْنَى (Arti Bahasa Indonesia)</div>
+            <div id="match-indo-col" class="match-col"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: QUIZ -->
+    <section id="quiz" class="section-panel">
+      <div class="card-box">
+        <div class="section-header">
+          <h2>📝 Kuis Interaktif (30 Soal)</h2>
+          <div class="stat-badge">🏆 Skor Saat Ini: <span id="quiz-live-score">0</span></div>
+        </div>
+
+        <div id="quiz-active-area">
+          <div class="quiz-progress-wrap">
+            <div class="quiz-meta">
+              <span id="quiz-progress-text">Soal 1 dari 30</span>
+              <span id="quiz-topic-badge" style="color:var(--accent);">Mufradat & Qawaid</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" id="quiz-progress-fill"></div>
+            </div>
+          </div>
+
+          <div class="question-box">
+            <span class="q-number" id="q-num-label">Pertanyaan #1</span>
+            <div class="q-text" id="q-text">Memuat soal...</div>
+            <div class="q-arabic-prompt" id="q-arabic-box" style="display:none;">
+              <span class="arabic" id="q-arabic-text"></span>
+              <button class="mini-audio" title="Dengarkan" onclick="speakQuizArabic()">🔊</button>
+            </div>
+          </div>
+
+          <div class="options-list" id="quiz-options"></div>
+
+          <div class="feedback-box" id="quiz-feedback"></div>
+
+          <div class="quiz-footer">
+            <button class="pill-btn" onclick="restartQuiz()">🔄 Mulai Ulang Kuis</button>
+            <button class="btn-primary" id="next-q-btn" onclick="nextQuestion()" disabled>Soal Berikutnya ➡️</button>
+          </div>
+        </div>
+
+        <div class="result-screen" id="quiz-result-area">
+          <div class="result-score-circle">
+            <span style="font-size:0.85rem; opacity:0.9;">NILAI AKHIR</span>
+            <span class="big-num" id="final-grade">100</span>
+          </div>
+          <h3 id="result-title" style="font-size:1.5rem; color:var(--primary-dark); margin-bottom:0.5rem;">Mumtaz! Luar Biasa!</h3>
+          <p id="result-desc" style="color:var(--text-muted); max-width:500px; margin:0 auto 1.5rem;">
+            Kamu berhasil menjawab dengan benar.
+          </p>
+          <button class="btn-primary" onclick="restartQuiz()">🔁 Kerjakan Kuis Lagi</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Media Pembelajaran Interaktif Bahasa Arab Kelas X Semester 1 • <strong>MA Nurul Qur'an</strong><br>
+    Disusun untuk Pembelajaran Pengajar: <strong>Mahya Hidayatun Ni'mah, S.Pd</strong>
+  </footer>
+
+  <script>
+    // ==========================================
+    // 1. DATA 30 KOSAKATA BAB 2 (AL-USRAH WAL-BAIT)
+    // Sumber: Buku Bahasa Arab MA Kelas X Kemenag RI Bab 2
+    // ==========================================
+    const vocabData = [
+      { id: 1, ar: "الْأُسْرَةُ", latin: "Al-Usratu", idn: "Keluarga", cat: "Keluarga" },
+      { id: 2, ar: "الْبَيْتُ", latin: "Al-Baitu", idn: "Rumah", cat: "Rumah" },
+      { id: 3, ar: "الْأَبُ", latin: "Al-Abu", idn: "Ayah", cat: "Keluarga" },
+      { id: 4, ar: "الْأُمُّ", latin: "Al-Ummu", idn: "Ibu", cat: "Keluarga" },
+      { id: 5, ar: "أَخِي الْكَبِيرُ", latin: "Akhī al-Kabīru", idn: "Kakak laki-laki saya", cat: "Keluarga" },
+      { id: 6, ar: "أَخِي الصَّغِيرُ", latin: "Akhī aṣ-Ṣaghīru", idn: "Adik laki-laki saya", cat: "Keluarga" },
+      { id: 7, ar: "أُخْتِي الْكَبِيرَةُ", latin: "Ukhtī al-Kabīratu", idn: "Kakak perempuan saya", cat: "Keluarga" },
+      { id: 8, ar: "أُخْتِي الصَّغِيرَةُ", latin: "Ukhtī aṣ-Ṣaghīratu", idn: "Adik perempuan saya", cat: "Keluarga" },
+      { id: 9, ar: "رَبَّةُ الْبَيْتِ", latin: "Rabbatul-Baiti", idn: "Ibu rumah tangga", cat: "Keluarga" },
+      { id: 10, ar: "الطَّابِقُ الْعُلْوِيُّ", latin: "Aṭ-Ṭābiqu al-'Ulwiyyu", idn: "Lantai atas / Tingkat atas", cat: "Rumah" },
+      { id: 11, ar: "الطَّابِقُ السُّفْلِيُّ", latin: "Aṭ-Ṭābiqu as-Sufliyyu", idn: "Lantai bawah / Tingkat bawah", cat: "Rumah" },
+      { id: 12, ar: "غُرْفَةُ الْجُلُوسِ", latin: "Ghurfatul-Julūsi", idn: "Ruang tamu / Ruang duduk", cat: "Rumah" },
+      { id: 13, ar: "غُرْفَةُ النَّوْمِ", latin: "Ghurfatun-Naumi", idn: "Kamar tidur", cat: "Rumah" },
+      { id: 14, ar: "غُرْفَةُ الْمُذَاكَرَةِ", latin: "Ghurfatul-Mudhākarati", idn: "Ruang belajar", cat: "Rumah" },
+      { id: 15, ar: "غُرْفَةُ الْأَكْلِ", latin: "Ghurfatul-Akli", idn: "Ruang makan", cat: "Rumah" },
+      { id: 16, ar: "الْمَطْبَخُ", latin: "Al-Maṭbakhu", idn: "Dapur", cat: "Rumah" },
+      { id: 17, ar: "الْحَمَّامُ", latin: "Al-Ḥammāmu", idn: "Kamar mandi", cat: "Rumah" },
+      { id: 18, ar: "شُرْفَةٌ", latin: "Syurfatun", idn: "Balkon / Teras atas", cat: "Rumah" },
+      { id: 19, ar: "بَوَّابَةٌ", latin: "Bawwābatun", idn: "Pintu gerbang", cat: "Rumah" },
+      { id: 20, ar: "سُوْرٌ", latin: "Sūrun", idn: "Pagar / Tembok", cat: "Rumah" },
+      { id: 21, ar: "نَافِذَةٌ", latin: "Nāfidhatun", idn: "Jendela", cat: "Rumah" },
+      { id: 22, ar: "حَدِيقَةُ الْبَيْتِ", latin: "Ḥadīqatul-Baiti", idn: "Taman rumah", cat: "Rumah" },
+      { id: 23, ar: "أَقُومُ مِنَ النَّوْمِ", latin: "Aqūmu minan-Naumi", idn: "Saya bangun tidur", cat: "Aktivitas" },
+      { id: 24, ar: "أَتَوَضَّأُ", latin: "Atawaḍḍa'u", idn: "Saya berwudhu", cat: "Aktivitas" },
+      { id: 25, ar: "أَتَنَاوَلُ الْفَطُورَ", latin: "Atanāwalul-Faṭūra", idn: "Saya makan pagi (sarapan)", cat: "Aktivitas" },
+      { id: 26, ar: "أَطْبَخُ الطَّعَامَ", latin: "Aṭbakhuth-Ṭa'āma", idn: "Saya memasak makanan", cat: "Aktivitas" },
+      { id: 27, ar: "أَغْسِلُ الْمَلَابِسَ", latin: "Aghsilul-Malābisa", idn: "Saya mencuci pakaian", cat: "Aktivitas" },
+      { id: 28, ar: "أُشَاهِدُ التِّلْفِزْيُونَ", latin: "Usyāhidut-Tilfizyūna", idn: "Saya menonton televisi", cat: "Aktivitas" },
+      { id: 29, ar: "أَعْمَلُ الْوَاجِبَاتِ الْمَنْزِلِيَّةَ", latin: "A'malul-Wājibātil-Manziliyyata", idn: "Saya mengerjakan PR", cat: "Aktivitas" },
+      { id: 30, ar: "أَنَامُ مُبَكِّرًا", latin: "Anāmu Mubakkiran", idn: "Saya tidur lebih awal", cat: "Aktivitas" }
+    ];
+
+    // ==========================================
+    // 2. WEB SPEECH API (ar-SA)
+    // ==========================================
+    function speakArabic(text) {
+      if (!('speechSynthesis' in window)) {
+        alert("Maaf, browser Anda belum mendukung fitur suara (Web Speech API).");
+        return;
+      }
+      window.speechSynthesis.cancel();
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = 'ar-SA';
+      utterance.rate = 0.85;
+
+      // Cari suara bahasa Arab jika tersedia di perangkat
+      const voices = window.speechSynthesis.getVoices();
+      const arVoice = voices.find(v => v.lang.includes('ar-SA')) || voices.find(v => v.lang.startsWith('ar'));
+      if (arVoice) utterance.voice = arVoice;
+
+      window.speechSynthesis.speak(utterance);
+    }
+
+    if ('speechSynthesis' in window) {
+      window.speechSynthesis.onvoiceschanged = () => window.speechSynthesis.getVoices();
+    }
+
+    // ==========================================
+    // 3. TAB NAVIGATION
+    // ==========================================
+    function switchTab(tabId, btnEl) {
+      document.querySelectorAll('.section-panel').forEach(p => p.classList.remove('active'));
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      document.getElementById(tabId).classList.add('active');
+      btnEl.classList.add('active');
+    }
+
+    // ==========================================
+    // 4. FLASHCARDS LOGIC
+    // ==========================================
+    let currentDeck = [...vocabData];
+    let currentIndex = 0;
+
+    function renderFlashcard() {
+      const item = currentDeck[currentIndex];
+      const fcEl = document.getElementById('flashcard');
+      fcEl.classList.remove('flipped');
+
+      document.getElementById('fc-cat').textContent = item.cat;
+      document.getElementById('fc-counter').textContent = `${currentIndex + 1} / ${currentDeck.length}`;
+      document.getElementById('fc-counter-back').textContent = `${currentIndex + 1} / ${currentDeck.length}`;
+      document.getElementById('fc-arabic').textContent = item.ar;
+      document.getElementById('fc-latin').textContent = item.latin;
+      document.getElementById('fc-meaning').textContent = item.idn;
+      document.getElementById('fc-arabic-back').textContent = item.ar;
+      document.getElementById('fc-latin-back').textContent = item.latin;
+    }
+
+    function flipCard() {
+      document.getElementById('flashcard').classList.toggle('flipped');
+    }
+
+    function speakCurrentCard() {
+      speakArabic(currentDeck[currentIndex].ar);
+    }
+
+    function nextCard() {
+      currentIndex = (currentIndex + 1) % currentDeck.length;
+      renderFlashcard();
+    }
+
+    function prevCard() {
+      currentIndex = (currentIndex - 1 + currentDeck.length) % currentDeck.length;
+      renderFlashcard();
+    }
+
+    function shuffleCards() {
+      currentDeck = [...currentDeck].sort(() => Math.random() - 0.5);
+      currentIndex = 0;
+      renderFlashcard();
+    }
+
+    function filterFlashcards(category, btn) {
+      document.querySelectorAll('#fc-filters .pill-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      currentDeck = category === 'all' ? [...vocabData] : vocabData.filter(v => v.cat === category);
+      currentIndex = 0;
+      renderFlashcard();
+    }
+
+    function renderAllVocabGrid() {
+      const grid = document.getElementById('all-vocab-grid');
+      grid.innerHTML = vocabData.map(v => `
+        <div class="mini-vocab">
+          <div class="mini-vocab-text">
+            <span class="arabic ar">${v.ar}</span>
+            <span class="id">${v.id}. ${v.idn}</span>
+          </div>
+          <button class="mini-audio" title="Dengarkan ${v.latin}" onclick="speakArabic('${v.ar}')">🔊</button>
+        </div>
+      `).join('');
+    }
+
+    // ==========================================
+    // 5. MATCHING GAME LOGIC (30 KATA -> 3 SESI)
+    // ==========================================
+    let currentRound = 0;
+    let selectedArabic = null;
+    let selectedIndo = null;
+    let matchScore = 0;
+    let solvedIds = new Set();
+
+    function loadMatchRound(roundIndex) {
+      currentRound = roundIndex;
+      selectedArabic = null;
+      selectedIndo = null;
+      document.getElementById('match-banner').style.display = 'none';
+
+      [0, 1, 2].forEach(i => {
+        document.getElementById(`round-btn-${i}`).classList.toggle('active', i === roundIndex);
+      });
+
+      const slice = vocabData.slice(roundIndex * 10, (roundIndex + 1) * 10);
+      const shuffledAr = [...slice].sort(() => Math.random() - 0.5);
+      const shuffledId = [...slice].sort(() => Math.random() - 0.5);
+
+      const arCol = document.getElementById('match-arabic-col');
+      const idCol = document.getElementById('match-indo-col');
+
+      arCol.innerHTML = shuffledAr.map(item => `
+        <div class="match-item arabic arabic-item ${solvedIds.has(item.id) ? 'matched' : ''}"
+             data-id="${item.id}" onclick="selectMatchArabic(this, ${item.id}, '${item.ar}')">
+          ${item.ar}
+        </div>
+      `).join('');
+
+      idCol.innerHTML = shuffledId.map(item => `
+        <div class="match-item indo-item ${solvedIds.has(item.id) ? 'matched' : ''}"
+             data-id="${item.id}" onclick="selectMatchIndo(this, ${item.id})">
+          ${item.idn}
+        </div>
+      `).join('');
+
+      checkRoundCompletion();
+    }
+
+    function selectMatchArabic(el, id, arabicText) {
+      if (el.classList.contains('matched')) return;
+      speakArabic(arabicText);
+      document.querySelectorAll('#match-arabic-col .match-item').forEach(i => i.classList.remove('selected'));
+      el.classList.add('selected');
+      selectedArabic = { el, id };
+      evaluateMatch();
+    }
+
+    function selectMatchIndo(el, id) {
+      if (el.classList.contains('matched')) return;
+      document.querySelectorAll('#match-indo-col .match-item').forEach(i => i.classList.remove('selected'));
+      el.classList.add('selected');
+      selectedIndo = { el, id };
+      evaluateMatch();
+    }
+
+    function evaluateMatch() {
+      if (!selectedArabic || !selectedIndo) return;
+
+      if (selectedArabic.id === selectedIndo.id) {
+        selectedArabic.el.classList.remove('selected');
+        selectedIndo.el.classList.remove('selected');
+        selectedArabic.el.classList.add('matched');
+        selectedIndo.el.classList.add('matched');
+
+        if (!solvedIds.has(selectedArabic.id)) {
+          solvedIds.add(selectedArabic.id);
+          matchScore += 10;
+        }
+        updateMatchStats();
+        checkRoundCompletion();
+        selectedArabic = null;
+        selectedIndo = null;
+      } else {
+        const aEl = selectedArabic.el;
+        const iEl = selectedIndo.el;
+        aEl.classList.add('wrong');
+        iEl.classList.add('wrong');
+        matchScore = Math.max(0, matchScore - 2);
+        updateMatchStats();
+        selectedArabic = null;
+        selectedIndo = null;
+        setTimeout(() => {
+          aEl.classList.remove('selected', 'wrong');
+          iEl.classList.remove('selected', 'wrong');
+        }, 450);
+      }
+    }
+
+    function updateMatchStats() {
+      document.getElementById('match-score').textContent = matchScore;
+      document.getElementById('match-total-solved').textContent = solvedIds.size;
+    }
+
+    function checkRoundCompletion() {
+      const slice = vocabData.slice(currentRound * 10, (currentRound + 1) * 10);
+      const allDone = slice.every(item => solvedIds.has(item.id));
+      if (allDone) {
+        const banner = document.getElementById('match-banner');
+        banner.style.display = 'block';
+        if (solvedIds.size === 30) {
+          banner.innerHTML = `🏆 Mumtaz! Semua 30 kosakata berhasil dijodohkan dengan skor akhir <strong>${matchScore}</strong>!`;
+        } else {
+          banner.innerHTML = `🎉 Bagus sekali! Sesi ${currentRound + 1} selesai. Pilih sesi lainnya di atas untuk melengkapi 30 kata.`;
+        }
+      }
+    }
+
+    function resetAllMatching() {
+      solvedIds.clear();
+      matchScore = 0;
+      updateMatchStats();
+      loadMatchRound(0);
+    }
+
+    // ==========================================
+    // 6. QUIZ 30 SOAL (MUFRADAT, QIRA'AH & QAWAID DHAMIR)
+    // ==========================================
+    const quizQuestions = [
+      {
+        topic: "Mufradat",
+        q: "Apa arti dari ungkapan bahasa Arab berikut?",
+        ar: "الأُسْرَةُ وَالْبَيْتُ",
+        opts: ["Sekolah dan Lingkungan", "Keluarga dan Rumah", "Kehidupan Sehari-hari", "Makanan dan Minuman"],
+        ans: 1,
+        exp: "الأُسْرَةُ (Al-Usrah) berarti keluarga, dan الْبَيْتُ (Al-Bait) berarti rumah."
+      },
+      {
+        topic: "Mufradat",
+        q: "Ruangan di rumah yang digunakan untuk memasak makanan adalah...",
+        ar: "أَيْنَ تَطْبَخُ الْأُمُّ الطَّعَامَ؟",
+        opts: ["فِي غُرْفَةِ النَّوْمِ", "فِي الْحَمَّامِ", "فِي الْمَطْبَخِ", "فِي غُرْفَةِ الْجُلُوسِ"],
+        ans: 2,
+        exp: "الْمَطْبَخُ (Al-Maṭbakh) artinya dapur, tempat ibu memasak makanan."
+      },
+      {
+        topic: "Mufradat",
+        q: "Arti dari kata yang digarisbawahi: «أُمِّي رَبَّةُ الْبَيْتِ» adalah...",
+        ar: "رَبَّةُ الْبَيْتِ",
+        opts: ["Pegawai negeri", "Ibu rumah tangga", "Guru sekolah", "Pedagang di pasar"],
+        ans: 1,
+        exp: "رَبَّةُ الْبَيْتِ (Rabbatul-Bait) bermakna ibu rumah tangga."
+      },
+      {
+        topic: "Mufradat",
+        q: "Di ruangan manakah anggota keluarga biasanya berkumpul dan menerima tamu?",
+        ar: "يَجْتَمِعُ أَعْضَاءُ الْأُسْرَةِ فِي...",
+        opts: ["غُرْفَةِ الْجُلُوسِ", "الْحَمَّامِ", "الْمَطْبَخِ", "غُرْفَةِ النَّوْمِ"],
+        ans: 0,
+        exp: "غُرْفَةُ الْجُلُوسِ (Ghurfatul-Julūs) adalah ruang tamu atau ruang duduk keluarga."
+      },
+      {
+        topic: "Mufradat",
+        q: "Terjemahan yang tepat untuk kata «الطَّابِقُ الْعُلْوِيُّ» adalah...",
+        ar: "الطَّابِقُ الْعُلْوِيُّ",
+        opts: ["Lantai bawah", "Halaman depan", "Lantai atas", "Pintu gerbang"],
+        ans: 2,
+        exp: "الطَّابِقُ الْعُلْوِيُّ berarti lantai/tingkat atas, lawannya adalah الطَّابِقُ السُّفْلِيُّ (lantai bawah)."
+      },
+      {
+        topic: "Mufradat",
+        q: "Rasyid mengulang pelajaran dan mengerjakan PR di...",
+        ar: "يُذَاكِرُ رَشِيدٌ دُرُوسَهُ فِي...",
+        opts: ["غُرْفَةِ الْأَكْلِ", "غُرْفَةِ الْمُذَاكَرَةِ", "الْحَمَّامِ", "شُرْفَةِ الْبَيْتِ"],
+        ans: 1,
+        exp: "غُرْفَةُ الْمُذَاكَرَةِ (Ghurfatul-Mudhākarah) berarti ruang belajar."
+      },
+      {
+        topic: "Mufradat",
+        q: "Apa arti dari kata «غُرْفَةُ النَّوْمِ»?",
+        ar: "غُرْفَةُ النَّوْمِ",
+        opts: ["Ruang makan", "Kamar tidur", "Kamar mandi", "Ruang tamu"],
+        ans: 1,
+        exp: "غُرْفَةُ النَّوْمِ (Ghurfatun-Naum) adalah kamar tidur."
+      },
+      {
+        topic: "Mufradat",
+        q: "Apa arti dari kata «غُرْفَةُ الْأَكْلِ»?",
+        ar: "غُرْفَةُ الْأَكْلِ",
+        opts: ["Ruang makan", "Dapur", "Taman rumah", "Balkon"],
+        ans: 0,
+        exp: "غُرْفَةُ الْأَكْلِ (Ghurfatul-Akl) artinya ruang makan."
+      },
+      {
+        topic: "Mufradat",
+        q: "Bahasa Arab dari 'Jendela' adalah...",
+        ar: "مَا مَعْنَى 'Jendela' بِالْعَرَبِيَّةِ؟",
+        opts: ["بَوَّابَةٌ", "نَافِذَةٌ", "سُوْرٌ", "شُرْفَةٌ"],
+        ans: 1,
+        exp: "نَافِذَةٌ (Nāfidhah) artinya jendela. بَوَّابَةٌ = gerbang, سُوْرٌ = pagar, شُرْفَةٌ = balkon."
+      },
+      {
+        topic: "Mufradat",
+        q: "Bahasa Arab dari 'Adik perempuan saya' adalah...",
+        ar: "أَدِيكْ پَرَمْڤُوانْ سَايَا",
+        opts: ["أَخِي الْكَبِيرُ", "أُخْتِي الْكَبِيرَةُ", "أُخْتِي الصَّغِيرَةُ", "أَخِي الصَّغِيرُ"],
+        ans: 2,
+        exp: "أُخْتِي الصَّغِيرَةُ (Ukhtī aṣ-Ṣaghīrah) berarti adik perempuan saya."
+      },
+      {
+        topic: "Aktivitas Harian",
+        q: "Lengkapi kalimat berikut: «... مِنَ النَّوْمِ فِي السَّاعَةِ الرَّابِعَةِ صَبَاحًا»",
+        ar: "... مِنَ النَّوْمِ مُبَكِّرًا",
+        opts: ["أَغْسِلُ", "أَسْتَيْقِظُ / أَقُومُ", "أَطْبَخُ", "أُشَاهِدُ"],
+        ans: 1,
+        exp: "أَقُومُ / أَسْتَيْقِظُ مِنَ النَّوْمِ artinya saya bangun dari tidur."
+      },
+      {
+        topic: "Aktivitas Harian",
+        q: "Lengkapi kalimat: «عَائِشَةُ ... أُمَّهَا عَلَى إِعْدَادِ الطَّعَامِ»",
+        ar: "عَائِشَةُ ... أُمَّهَا عَلَى إِعْدَادِ الطَّعَامِ",
+        opts: ["تَنَامُ", "تُسَاعِدُ", "تَسْتَرِيحُ", "تَغْسِلُ"],
+        ans: 1,
+        exp: "تُسَاعِدُ (tusā'idu) artinya membantu. Aisyah membantu ibunya menyiapkan makanan."
+      },
+      {
+        topic: "Aktivitas Harian",
+        q: "Lengkapi kalimat: «الطَّالِبَةُ ... الْمَلَابِسَ فِي الْحَمَّامِ»",
+        ar: "الطَّالِبَةُ ... الْمَلَابِسَ فِي الْحَمَّامِ",
+        opts: ["تَغْسِلُ", "تَأْكُلُ", "تَقْرَأُ", "تَكْتُبُ"],
+        ans: 0,
+        exp: "تَغْسِلُ الْمَلَابِسَ artinya mencuci pakaian."
+      },
+      {
+        topic: "Aktivitas Harian",
+        q: "Apa arti ungkapan «أُشَاهِدُ التِّلْفِزْيُونَ قَلِيلًا»?",
+        ar: "أُشَاهِدُ التِّلْفِزْيُونَ قَلِيلًا",
+        opts: ["Saya mematikan televisi", "Saya menonton televisi sebentar", "Saya membeli televisi baru", "Saya membersihkan televisi"],
+        ans: 1,
+        exp: "أُشَاهِدُ = saya menonton, التِّلْفِزْيُونَ = televisi, قَلِيلًا = sebentar/sedikit."
+      },
+      {
+        topic: "Aktivitas Harian",
+        q: "Apa arti dari «أَتَنَاوَلُ الْفَطُورَ مَعَ أُسْرَتِي»?",
+        ar: "أَتَنَاوَلُ الْفَطُورَ مَعَ أُسْرَتِي",
+        opts: ["Saya makan malam bersama teman", "Saya makan siang di kantin", "Saya sarapan pagi bersama keluargaku", "Saya memasak sarapan di dapur"],
+        ans: 2,
+        exp: "الْفَطُورُ (Al-Faṭūr) adalah sarapan pagi."
+      },
+      {
+        topic: "Qawaid (Ad-Dhamir)",
+        q: "Dalam ilmu Nahwu, kata ganti dalam bahasa Arab disebut...",
+        ar: "الْقَوَاعِدُ فِي الدَّرْسِ الثَّانِي",
+        opts: ["اِسْمُ الْإِشَارَةِ", "الضَّمِيرُ", "ظَرْفُ الْمَكَانِ", "أَدَوَاتُ الِاسْتِفْهَامِ"],
+        ans: 1,
+        exp: "Materi gramatika (Qawaid) pada Bab 2 adalah الضَّمِيرُ (Ad-Dhamīr / Kata Ganti)."
+      },
+      {
+        topic: "Qawaid (Ad-Dhamir)",
+        q: "Dhamir Bariz (kata ganti yang tampak) terbagi menjadi dua macam, yaitu...",
+        ar: "يَنْقَسِمُ الضَّمِيرُ الْبَارِزُ إِلَى قِسْمَيْنِ",
+        opts: ["مُفْرَدٌ وَجَمْعٌ", "مُتَّصِلٌ وَمُنْفَصِلٌ", "مَاضٍ وَمُضَارِعٌ", "مُذَكَّرٌ وَمُؤَنَّثٌ"],
+        ans: 1,
+        exp: "Dhamir Bariz terbagi menjadi الضَّمِيرُ الْمُتَّصِلُ (bersambung) dan الضَّمِيرُ الْمُنْفَصِلُ (terpisah)."
+      },
+      {
+        topic: "Qawaid (Ad-Dhamir)",
+        q: "Manakah di bawah ini yang termasuk الضَّمِيرُ الْمُنْفَصِلُ (kata ganti terpisah)?",
+        ar: "الضَّمِيرُ الْمُنْفَصِلُ",
+        opts: ["كَتَبْتُ", "بَيْتُهُ", "هُوَ / أَنْتَ / أَنَا", "مَدْرَسَتُنَا"],
+        ans: 2,
+        exp: "هُوَ، أَنْتَ، أَنَا berdiri sendiri dan terpisah dari kata lain sehingga disebut Dhamir Munfashil."
+      },
+      {
+        topic: "Qawaid (Ad-Dhamir)",
+        q: "Dhamir «هُوَ» menunjukkan kata ganti untuk...",
+        ar: "هُوَ يَعِيشُ فِي جُومْبَانْج",
+        opts: ["Orang pertama tunggal (Saya)", "Orang kedua laki-laki (Kamu lk)", "Orang ketiga tunggal laki-laki (Dia lk)", "Orang ketiga jamak perempuan (Mereka pr)"],
+        ans: 2,
+        exp: "هُوَ (Huwa) adalah dhamir ghaib (orang ketiga tunggal laki-laki / dia lk)."
+      },
+      {
+        topic: "Qawaid (Ad-Dhamir)",
+        q: "Pilih dhamir yang tepat: «... يَقُومُونَ مِنَ النَّوْمِ صَبَاحًا بَاكِرًا»",
+        ar: "... يَقُومُونَ مِنَ النَّوْمِ",
+        opts: ["هُوَ", "هُمَا", "هُمْ", "أَنْتُمْ"],
+        ans: 2,
+        exp: "Fi'il يَقُومُونَ berakhiran وْنَ dengan awalan يَ yang menunjukkan subjek mereka laki-laki (هُمْ)."
+      },
+      {
+        topic: "Qawaid (Ad-Dhamir)",
+        q: "Pilih dhamir yang tepat: «... تُسَاعِدُ أُمَّهَا عَلَى إِعْدَادِ الطَّعَامِ»",
+        ar: "... تُسَاعِدُ أُمَّهَا",
+        opts: ["هُوَ", "هِيَ", "أَنْتُمَا", "هُنَّ"],
+        ans: 1,
+        exp: "تُسَاعِدُ (dengan dhamir 'hā' pada أُمَّهَا) merujuk pada dia perempuan tunggal (هِيَ)."
+      },
+      {
+        topic: "Qawaid (Ad-Dhamir)",
+        q: "Pilih dhamir yang tepat: «... تَغْسِلْنَ الْمَلَابِسَ فِي الْحَمَّامِ»",
+        ar: "... تَغْسِلْنَ الْمَلَابِسَ",
+        opts: ["هُمْ", "أَنْتُنَّ", "هُنَّ", "أَنْتُمْ"],
+        ans: 1,
+        exp: "Awalan تَ dan akhiran نَ (نُونُ النِّسْوَةِ) pada تَغْسِلْنَ menunjukkan kalian perempuan (أَنْتُنَّ)."
+      },
+      {
+        topic: "Qawaid (Ad-Dhamir)",
+        q: "Pilih dhamir yang tepat: «... يَسْتَرِيحْنَ فِي غُرْفَةِ الْجُلُوسِ»",
+        ar: "... يَسْتَرِيحْنَ فِي غُرْفَةِ الْجُلُوسِ",
+        opts: ["هُنَّ", "أَنْتُنَّ", "هِيَ", "هُمَا"],
+        ans: 0,
+        exp: "Awalan يَ dan akhiran نَ pada يَسْتَرِيحْنَ menunjukkan mereka perempuan (هُنَّ)."
+      },
+      {
+        topic: "Qawaid (Ad-Dhamir)",
+        q: "Pilih dhamir yang tepat: «... تُؤَدِّيَانِ الْوَاجِبَاتِ الْمَنْزِلِيَّةَ»",
+        ar: "... تُؤَدِّيَانِ الْوَاجِبَاتِ",
+        opts: ["هُمَا", "أَنْتُمَا", "أَنْتُمْ", "نَحْنُ"],
+        ans: 1,
+        exp: "Awalan تَ dan akhiran انِ pada تُؤَدِّيَانِ menunjukkan kamu berdua (أَنْتُمَا)."
+      },
+      {
+        topic: "Qawaid (Ad-Dhamir)",
+        q: "Pilih dhamir yang tepat: «... تَنَامُونَ فِي غُرْفَةِ النَّوْمِ»",
+        ar: "... تَنَامُونَ فِي غُرْفَةِ النَّوْمِ",
+        opts: ["هُمْ", "أَنْتُمْ", "نَحْنُ", "أَنْتُنَّ"],
+        ans: 1,
+        exp: "Awalan تَ dan akhiran وْنَ pada تَنَامُونَ menunjukkan kalian laki-laki (أَنْتُمْ)."
+      },
+      {
+        topic: "Qawaid (Ad-Dhamir)",
+        q: "Ubahlah kalimat «أَنَا أَقْرَأُ دُرُوسِي فِي غُرْفَتِي» jika dhamirnya diganti menjadi «هُوَ»:",
+        ar: "أَنَا أَقْرَأُ دُرُوسِي فِي غُرْفَتِي ← هُوَ ...",
+        opts: ["هُوَ يَقْرَأُ دُرُوسَهُ فِي غُرْفَتِهِ", "هُوَ تَقْرَأُ دُرُوسَهَا فِي غُرْفَتِهَا", "هُوَ يَقْرَأُ دُرُوسِي فِي غُرْفَتِي", "هُوَ نَقْرَأُ دُرُوسَنَا فِي غُرْفَتِنَا"],
+        ans: 0,
+        exp: "Untuk dhamir هُوَ, fi'il menjadi يَقْرَأُ dan dhamir muttashil kepunyaan menjadi ـهُ (دُرُوسَهُ dan غُرْفَتِهِ)."
+      },
+      {
+        topic: "Qawaid (Ad-Dhamir)",
+        q: "Pada kalimat «جَهَّزْتُ الْفَطُورَ لِلْعَائِلَةِ», huruf ت pada kata جَهَّزْتُ adalah...",
+        ar: "جَهَّزْتُ الْفَطُورَ",
+        opts: ["الضَّمِيرُ الْمُنْفَصِلُ", "الضَّمِيرُ الْمُتَّصِلُ", "حَرْفُ الْجَرِّ", "اِسْمُ الْعَلَمِ"],
+        ans: 1,
+        exp: "تُ (Tā' al-Fā'il) menempel langsung pada fi'il madhi sehingga disebut الضَّمِيرُ الْمُتَّصِلُ."
+      },
+      {
+        topic: "Teks Deskriptif",
+        q: "Struktur teks deskriptif (النَّصُّ الْوَصْفِيُّ) terdiri dari dua bagian utama, yaitu...",
+        ar: "بِنَاءُ النَّصِّ الْوَصْفِيِّ",
+        opts: ["الْمُقَدِّمَةُ وَالْخَاتِمَةُ", "الْوَصْفُ الْعَامُّ وَالْوَصْفُ الْخَاصُّ", "الْأَحْدَاثُ وَالتَّعْلِيقُ", "الِاسْمُ وَالْفِعْلُ"],
+        ans: 1,
+        exp: "Struktur teks deskriptif adalah Deskripsi Umum (الْوَصْفُ الْعَامُّ) dan Deskripsi Khusus (الْوَصْفُ الْخَاصُّ)."
+      },
+      {
+        topic: "Pemahaman Bacaan",
+        q: "Perhatikan kalimat: «يُصَلِّي الْفَجْرَ فِي الْمَسْجِدِ جَمَاعَةً». Di manakah ia shalat Subuh?",
+        ar: "يُصَلِّي الْفَجْرَ فِي الْمَسْجِدِ جَمَاعَةً",
+        opts: ["Di kamar tidur", "Di masjid secara berjamaah", "Di ruang tamu sendirian", "Di halaman sekolah"],
+        ans: 1,
+        exp: "فِي الْمَسْجِدِ جَمَاعَةً berarti di masjid secara berjamaah."
+      },
+      {
+        topic: "Pemahaman Bacaan",
+        q: "Lawan kata (ضِدٌّ) dari kata kerja «يَنَامُ» (tidur) adalah...",
+        ar: "ضِدُّ الْكَلِمَةِ 'يَنَامُ'",
+        opts: ["يَجْلِسُ", "يَسْتَيْقِظُ", "يَغْتَسِلُ", "يَلْبَسُ"],
+        ans: 1,
+        exp: "يَسْتَيْقِظُ (yastaiqiẓu) artinya bangun tidur, lawan kata dari يَنَامُ (tidur)."
+      }
+    ];
+
+    let qIndex = 0;
+    let quizScore = 0;
+    let answeredCurrent = false;
+
+    function renderQuestion() {
+      answeredCurrent = false;
+      const item = quizQuestions[qIndex];
+      document.getElementById('quiz-progress-text').textContent = `Soal ${qIndex + 1} dari ${quizQuestions.length}`;
+      document.getElementById('quiz-topic-badge').textContent = item.topic;
+      document.getElementById('quiz-progress-fill').style.width = `${((qIndex) / quizQuestions.length) * 100}%`;
+      document.getElementById('q-num-label').textContent = `Pertanyaan #${qIndex + 1}`;
+      document.getElementById('q-text').textContent = item.q;
+
+      const arBox = document.getElementById('q-arabic-box');
+      if (item.ar) {
+        arBox.style.display = 'flex';
+        document.getElementById('q-arabic-text').textContent = item.ar;
+      } else {
+        arBox.style.display = 'none';
+      }
+
+      const letters = ['أ', 'ب', 'ج', 'د'];
+      const optContainer = document.getElementById('quiz-options');
+      optContainer.innerHTML = item.opts.map((opt, idx) => {
+        const isArabicOpt = /[\u0600-\u06FF]/.test(opt);
+        return `
+          <button class="option-btn" onclick="checkQuizAnswer(${idx}, this)">
+            <span class="${isArabicOpt ? 'arabic option-arabic' : ''}">${opt}</span>
+            <span style="font-weight:800; color:var(--primary);">${letters[idx]}</span>
+          </button>
+        `;
+      }).join('');
+
+      const fb = document.getElementById('quiz-feedback');
+      fb.className = 'feedback-box';
+      fb.innerHTML = '';
+
+      const nextBtn = document.getElementById('next-q-btn');
+      nextBtn.disabled = true;
+      nextBtn.textContent = qIndex === quizQuestions.length - 1 ? "Lihat Hasil Akhir 🏁" : "Soal Berikutnya ➡️";
+    }
+
+    function speakQuizArabic() {
+      const ar = quizQuestions[qIndex].ar;
+      if (ar) speakArabic(ar);
+    }
+
+    function checkQuizAnswer(selectedIdx, btnEl) {
+      if (answeredCurrent) return;
+      answeredCurrent = true;
+
+      const item = quizQuestions[qIndex];
+      const allBtns = document.querySelectorAll('#quiz-options .option-btn');
+      allBtns.forEach(b => b.disabled = true);
+
+      const fb = document.getElementById('quiz-feedback');
+      if (selectedIdx === item.ans) {
+        btnEl.classList.add('correct');
+        quizScore++;
+        document.getElementById('quiz-live-score').textContent = quizScore;
+        fb.className = 'feedback-box show valid';
+        fb.innerHTML = `<strong>✅ Jawaban Benar! (صَحِيحٌ)</strong><br>${item.exp}`;
+      } else {
+        btnEl.classList.add('incorrect');
+        allBtns[item.ans].classList.add('correct');
+        fb.className = 'feedback-box show invalid';
+        fb.innerHTML = `<strong>❌ Kurang Tepat! (خَطَأٌ)</strong><br>${item.exp}`;
+      }
+
+      document.getElementById('next-q-btn').disabled = false;
+      document.getElementById('quiz-progress-fill').style.width = `${((qIndex + 1) / quizQuestions.length) * 100}%`;
+    }
+
+    function nextQuestion() {
+      if (qIndex < quizQuestions.length - 1) {
+        qIndex++;
+        renderQuestion();
+      } else {
+        showQuizResult();
+      }
+    }
+
+    function showQuizResult() {
+      document.getElementById('quiz-active-area').style.display = 'none';
+      const resArea = document.getElementById('quiz-result-area');
+      resArea.style.display = 'block';
+
+      const finalGrade = Math.round((quizScore / quizQuestions.length) * 100);
+      document.getElementById('final-grade').textContent = finalGrade;
+
+      let title = "مُمْتَازٌ (Mumtaz! Sangat Baik)";
+      if (finalGrade < 60) title = "حَاوِلْ مَرَّةً أُخْرَى (Terus Berlatih!)";
+      else if (finalGrade < 85) title = "جَيِّدٌ جِدًّا (Jayyid Jiddan! Baik Sekali)";
+
+      document.getElementById('result-title').textContent = title;
+      document.getElementById('result-desc').innerHTML =
+        `Kamu menjawab benar <strong>${quizScore} dari ${quizQuestions.length} soal</strong> pada materi <em>Al-Usrah wal-Bait</em>.`;
+    }
+
+    function restartQuiz() {
+      qIndex = 0;
+      quizScore = 0;
+      document.getElementById('quiz-live-score').textContent = '0';
+      document.getElementById('quiz-result-area').style.display = 'none';
+      document.getElementById('quiz-active-area').style.display = 'block';
+      renderQuestion();
+    }
+
+    // Initialize All Modules
+    renderFlashcard();
+    renderAllVocabGrid();
+    loadMatchRound(0);
+    renderQuestion();
+  </script>
+</body>
+</html>
